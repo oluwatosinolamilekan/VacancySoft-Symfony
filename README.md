@@ -72,35 +72,6 @@ for migration
 php bin/console doctrine:database:create
 ``
 
-
-While composer is doing its magic, you need to add to modify `.env` file:
-```
- DB_CONNECTION=mysql
- DB_HOST=127.0.0.1
- DB_PORT=3306
- DB_DATABASE=laravel
- DB_USERNAME=root
- DB_PASSWORD=
-```
-
-### To Migrate the database in the project, command below
-```
- php artisan migrate --seed
-```
-
-While migrating the database, you need to serve the project with this command `php artisan serve`
-
-### How to run tests
-```
- php artisan test
-```
-
-[//]: # (![alt text]&#40;public/testing.png&#41;)
-
-### Login Details
-* email: admin@admin.com
-* password: password
-
 ### Sample Requests
 The EveryAngle API gives you access to pretty much all the features you can use on our dashboard and lets you extend them for use in your application. It strives to be RESTful and is organized around the main resources you would be interacting with - with a few notable exceptions.
 The Api Collection is located in the application, and it called `EveryAngle.postman_collection.json`
